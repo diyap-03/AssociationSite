@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = "http://localhost:5000";
+const baseUrl = "https://kleacses-api.onrender.com";
 
 export const getDomains = async() => {
     let results = await axios.get(`${baseUrl}/domainsclubs/`);

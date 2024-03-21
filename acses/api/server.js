@@ -14,7 +14,9 @@ connection.once('open',()=>{
 const app = express();
 const port= process.env.PORT || 5000
 
-app.use(cors())  //middleware
+app.use(cors({
+    origin: ["https://kleacses.onrender.com"],
+})) ; //middleware
 app.use(express.json());
 app.use('/domainsclubs',domainsRouter);// add routing files
 
